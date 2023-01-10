@@ -1,0 +1,49 @@
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+
+        <title> Register </title>
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">              
+
+    </head>
+
+    <body></br></br></br></br></br>
+
+        <div align="center">
+
+          <div align="center" class="border">
+
+             <div class="header">
+
+                <h1 class="word">Upload your EV Details</h1>
+
+             </div></br></br></br>
+
+            <h2 class="word">
+
+                <form action="{{ url_for('ev_submission') }}" method="post">
+
+                  <div class="msg">{{ msg }}</div>
+
+                    <input id="address" name="address" type="text" placeholder="Enter Your EV Address" class="textbox"/></br></br>
+
+                    <input id="C_Type" name="C_Type" type="text" placeholder="Enter Your EV_Charger_Type" class="textbox"/></br></br>
+
+                    <input id="Price" name="Price" type="text" placeholder="Enter Your Charging Price for an Hour" class="textbox"/></br></br>
+
+                    <input type="submit" class="btn" value="ev_submission"></br>
+
+                </form>
+
+            </h2>
+
+          </div>
+
+        </div>
+
+    </body>
+
+</html>
